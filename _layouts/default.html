@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+      <div class="wrapper">
+        <div class="page-content">
+          {{ content }}
+        </div>
+        {% include footer.html %}
+    </div>
+
+
+
+
+    <!-- Twitter Shizzle -->
+    <script type="text/javascript">
+    window.twttr = (function (d, s, id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src= "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+    </script>
+
+  </body>
+</html>
